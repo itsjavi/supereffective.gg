@@ -1,2 +1,2 @@
 # supereffective.gg
-Issue Tracker and Task Board for supereffective.gg
+Issue Tracker and Task Board for https://supereffective.gg
