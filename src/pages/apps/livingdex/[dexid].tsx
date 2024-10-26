@@ -10,7 +10,6 @@ import PageMeta from '@/features/pages/components/PageMeta'
 import LivingDexLayout from '@/lib/components/layout/LivingDexLayout'
 import { abs_url } from '@/lib/components/Links'
 import { getGameSetByGameId } from '@/lib/data-client/game-sets'
-import { logger } from '@/lib/utils/logger'
 import { deserializeObject, serializeObject } from '@/lib/utils/serialization/jsonSerializable'
 
 const Page = ({ dexData, presets }: { dexData: any; presets: PresetDexMap }) => {
@@ -81,7 +80,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
       },
     }
   } catch (e) {
-    logger.error('Error loading dex', { dexid, error: String(e) })
+    console.error('Error loading dex', { dexid, error: String(e) })
     console.error(e)
     return {
       notFound: true,

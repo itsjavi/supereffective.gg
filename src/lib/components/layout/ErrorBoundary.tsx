@@ -1,4 +1,3 @@
-import { log as axiomLogger } from 'next-axiom'
 import React from 'react'
 
 import PageSkeleton from './PageSkeleton'
@@ -18,7 +17,6 @@ class ErrorBoundary extends React.Component<any, { hasError: boolean; errorMessa
   componentDidCatch(error: Error, errorInfo: any) {
     // You can use your own error logging service here
     console.error({ error, errorInfo })
-    axiomLogger.error('ClientError', { error, errorInfo })
   }
   render() {
     // Check if the error is thrown

@@ -1,4 +1,3 @@
-import { withAxiom } from 'next-axiom'
 import path from 'node:path'
 
 if (!process.env.VERCEL && !process.env.VERCEL_URL) {
@@ -73,6 +72,4 @@ const baseConfig = {
   },
 }
 
-const withPlugins = withAxiom(baseConfig)
-
-export default withPlugins
+export default baseConfig

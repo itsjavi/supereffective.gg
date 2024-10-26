@@ -1,8 +1,4 @@
-import { log } from 'next-axiom'
-
 import { isDebugEnabled, isProductionEnv } from './env'
-
-export const logger = log
 
 export function dd(...args: any[]): void {
   if (!isDebugEnabled()) {
