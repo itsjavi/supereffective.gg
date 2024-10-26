@@ -5,7 +5,7 @@
 
 Source code for supereffective.gg 's website.
 
-Data can be found in https://github.com/supeffective/dataset
+Data can be found in https://github.com/supeffective/website/tree/main/src/lib/data-client
 
 ## Prerequisites
 
@@ -71,11 +71,24 @@ This project is a NextJS application with the following directory structure:
 
 Contributions are welcome! Please read the [contributing guidelines](./CONTRIBUTING.md) before submitting a PR.
 
-- [Dataset repository](https://github.com/supeffective/dataset)
+- [Dataset](https://github.com/supeffective/website/tree/main/src/lib/data-client)
 - [Issue Reports and Tracking](https://github.com/supeffective/website/issues)
 - [Project Roadmap and Task Board](https://github.com/orgs/supeffective/projects)
 
 For other feedback that is not related to issues, please use our [Discord server](https://discord.gg/3fRXQFtrkN)
+
+### Submitting changes to the dataset
+
+The data used in this project can be found as
+[minified JSON files](https://github.com/supeffective/website/tree/main/src/lib/data-client) in the
+`src/lib/data-client` folder of the project. Feel free to report data issues, suggest improvements and changes, or
+submit a pull request with the changes or fixes.
+
+In order to edit a minified JSON file, you will have to beautify it first. You can use the
+[JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/) website to do so.
+
+Before submitting a pull request, make sure that the `.min.json` files are minified again. You can use the same
+[JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/) website to do so.
 
 ## License
 
