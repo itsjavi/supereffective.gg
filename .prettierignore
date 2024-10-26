@@ -37,3 +37,5 @@ turbo.json
 *.min.css
 *.min.js
 *.map
+
+src/icons/

@@ -1,0 +1,408 @@
+/* src/TypeIcon/TypeIcon.css */
+:root {
+  --pkm-type-color-text-light: #f2f2f2;
+  --pkm-type-color-text-dark: #191919;
+  --pkm-type-color-normal: #949495;
+  --pkm-type-color-normal-rgb:
+    148,
+    148,
+    149;
+  --pkm-type-color-fire: #E56C3F;
+  --pkm-type-color-fire-rgb:
+    229,
+    108,
+    63;
+  --pkm-type-color-water: #5185C5;
+  --pkm-type-color-water-rgb:
+    81,
+    133,
+    197;
+  --pkm-type-color-electric: #f3d343;
+  --pkm-type-color-electric-rgb:
+    246,
+    216,
+    81;
+  --pkm-type-color-grass: #66A946;
+  --pkm-type-color-grass-rgb:
+    102,
+    169,
+    70;
+  --pkm-type-color-ice: #6DC8EB;
+  --pkm-type-color-ice-rgb:
+    109,
+    200,
+    235;
+  --pkm-type-color-fighting: #E09C41;
+  --pkm-type-color-fighting-rgb:
+    224,
+    156,
+    65;
+  --pkm-type-color-poison: #735198;
+  --pkm-type-color-poison-rgb:
+    115,
+    81,
+    152;
+  --pkm-type-color-ground: #9C7743;
+  --pkm-type-color-ground-rgb:
+    156,
+    119,
+    67;
+  --pkm-type-color-flying: #A2C3E7;
+  --pkm-type-color-flying-rgb:
+    162,
+    195,
+    231;
+  --pkm-type-color-psychic: #DD6B7B;
+  --pkm-type-color-psychic-rgb:
+    221,
+    107,
+    123;
+  --pkm-type-color-bug: #9FA244;
+  --pkm-type-color-bug-rgb:
+    159,
+    162,
+    68;
+  --pkm-type-color-rock: #BFB889;
+  --pkm-type-color-rock-rgb:
+    191,
+    184,
+    137;
+  --pkm-type-color-ghost: #684870;
+  --pkm-type-color-ghost-rgb:
+    104,
+    72,
+    112;
+  --pkm-type-color-dragon: #535CA8;
+  --pkm-type-color-dragon-rgb:
+    83,
+    92,
+    168;
+  --pkm-type-color-dark: #4C4948;
+  --pkm-type-color-dark-rgb:
+    76,
+    73,
+    72;
+  --pkm-type-color-steel: #69A9C7;
+  --pkm-type-color-steel-rgb:
+    105,
+    169,
+    199;
+  --pkm-type-color-fairy: #DAB4D4;
+  --pkm-type-color-fairy-rgb:
+    218,
+    180,
+    212;
+}
+.pkm-type {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.25rem;
+  user-select: none;
+  aspect-ratio: 1;
+  padding: 0.25rem;
+  color: var(--pkm-type-color-text-dark);
+  text-align: center;
+  vertical-align: middle;
+}
+.pkm-type--theme-dark {
+  color: var(--pkm-type-color-text-light);
+}
+.pkm-type--filled {
+  background-color: #000;
+}
+.pkm-type--theme-dark.pkm-type--filled {
+  background-color: var(--pkm-type-color-text-light);
+}
+.pkm-type--rounded {
+  border-radius: 999px;
+  border-radius: 100%;
+}
+.pkm-type--tera {
+  padding: 0;
+  transform: scale(1.25);
+  aspect-ratio: unset;
+  vertical-align: top;
+}
+.pkm-type--not-tera.pkm-type--not-filled {
+  padding-inline: 0;
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-normal {
+  background-color: var(--pkm-type-color-normal);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-fire {
+  background-color: var(--pkm-type-color-fire);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-water {
+  background-color: var(--pkm-type-color-water);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-electric {
+  background-color: var(--pkm-type-color-electric);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-grass {
+  background-color: var(--pkm-type-color-grass);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-ice {
+  background-color: var(--pkm-type-color-ice);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-fighting {
+  background-color: var(--pkm-type-color-fighting);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-poison {
+  background-color: var(--pkm-type-color-poison);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-ground {
+  background-color: var(--pkm-type-color-ground);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-flying {
+  background-color: var(--pkm-type-color-flying);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-psychic {
+  background-color: var(--pkm-type-color-psychic);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-bug {
+  background-color: var(--pkm-type-color-bug);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-rock {
+  background-color: var(--pkm-type-color-rock);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-ghost {
+  background-color: var(--pkm-type-color-ghost);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-dragon {
+  background-color: var(--pkm-type-color-dragon);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-dark {
+  background-color: var(--pkm-type-color-dark);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-steel {
+  background-color: var(--pkm-type-color-steel);
+}
+.pkm-type--filled.pkm-type--colored.pkm-type--not-tera.pkm-type-fairy {
+  background-color: var(--pkm-type-color-fairy);
+}
+.pkm-type--filled.pkm-type--tera {
+  background: none;
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-normal,
+.pkm-type--tera.pkm-type--colored.pkm-type-normal {
+  color: var(--pkm-type-color-normal);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-fire,
+.pkm-type--tera.pkm-type--colored.pkm-type-fire {
+  color: var(--pkm-type-color-fire);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-water,
+.pkm-type--tera.pkm-type--colored.pkm-type-water {
+  color: var(--pkm-type-color-water);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-electric,
+.pkm-type--tera.pkm-type--colored.pkm-type-electric {
+  color: var(--pkm-type-color-electric);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-grass,
+.pkm-type--tera.pkm-type--colored.pkm-type-grass {
+  color: var(--pkm-type-color-grass);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-ice,
+.pkm-type--tera.pkm-type--colored.pkm-type-ice {
+  color: var(--pkm-type-color-ice);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-fighting,
+.pkm-type--tera.pkm-type--colored.pkm-type-fighting {
+  color: var(--pkm-type-color-fighting);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-poison,
+.pkm-type--tera.pkm-type--colored.pkm-type-poison {
+  color: var(--pkm-type-color-poison);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-ground,
+.pkm-type--tera.pkm-type--colored.pkm-type-ground {
+  color: var(--pkm-type-color-ground);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-flying,
+.pkm-type--tera.pkm-type--colored.pkm-type-flying {
+  color: var(--pkm-type-color-flying);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-psychic,
+.pkm-type--tera.pkm-type--colored.pkm-type-psychic {
+  color: var(--pkm-type-color-psychic);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-bug,
+.pkm-type--tera.pkm-type--colored.pkm-type-bug {
+  color: var(--pkm-type-color-bug);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-rock,
+.pkm-type--tera.pkm-type--colored.pkm-type-rock {
+  color: var(--pkm-type-color-rock);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-ghost,
+.pkm-type--tera.pkm-type--colored.pkm-type-ghost {
+  color: var(--pkm-type-color-ghost);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-dragon,
+.pkm-type--tera.pkm-type--colored.pkm-type-dragon {
+  color: var(--pkm-type-color-dragon);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-dark,
+.pkm-type--tera.pkm-type--colored.pkm-type-dark {
+  color: var(--pkm-type-color-dark);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-steel,
+.pkm-type--tera.pkm-type--colored.pkm-type-steel {
+  color: var(--pkm-type-color-steel);
+}
+.pkm-type--not-filled.pkm-type--not-tera.pkm-type--colored.pkm-type-fairy,
+.pkm-type--tera.pkm-type--colored.pkm-type-fairy {
+  color: var(--pkm-type-color-fairy);
+}
+.pkm-type--size-xs {
+  width: 1rem;
+  height: 1rem;
+  line-height: 1;
+  padding: 1px;
+}
+.pkm-type--size-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1;
+  padding: 2px;
+}
+.pkm-type--size-md {
+  width: 2rem;
+  height: 2rem;
+  line-height: 3rem;
+  padding: 2px;
+}
+.pkm-type--size-lg {
+  width: 3rem;
+  height: 3rem;
+  line-height: 4rem;
+  padding: 4px;
+}
+.pkm-type--size-xl {
+  width: 4rem;
+  height: 4rem;
+  line-height: 8rem;
+  padding: 4px;
+}
+.pkm-type--tera.pkm-type--size-xs {
+  padding: 1px 0 0 0;
+}
+.pkm-type--tera.pkm-type--size-sm {
+  padding: 2px 0 0 0;
+  margin-bottom: 3px;
+}
+.pkm-type--tera.pkm-type--size-md {
+  padding: 2px 0 0 0;
+  margin-bottom: 3px;
+}
+.pkm-type--tera.pkm-type--size-lg {
+  padding: 4px 0 0 0;
+  margin-bottom: 6px;
+}
+.pkm-type--tera.pkm-type--size-xl {
+  padding: 4px 0 0 0;
+  margin-bottom: 8px;
+}
+.pkm-type-teraglyph {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  color: inherit;
+  fill: currentColor;
+}
+.pkm-type--theme-light.pkm-type--not-colored .pkm-type-teraglyph {
+  fill: var(--pkm-type-color-text-dark);
+}
+.pkm-type--theme-dark.pkm-type--not-colored .pkm-type-teraglyph {
+  fill: var(--pkm-type-color-text-light);
+}
+.pkm-type--size-xs .pkm-type-teraglyph {
+  top: 0px;
+}
+.pkm-type--size-sm .pkm-type-teraglyph {
+  top: 0px;
+}
+.pkm-type--size-md .pkm-type-teraglyph {
+  top: 1px;
+}
+.pkm-type--size-lg .pkm-type-teraglyph {
+  top: 2px;
+}
+.pkm-type--size-xl .pkm-type-teraglyph {
+  top: 2px;
+}
+.pkm-type-glyph {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  fill: currentColor;
+  width: 100%;
+  height: auto;
+}
+.pkm-type--tera .pkm-type-glyph,
+.pkm-type--filled .pkm-type-glyph {
+  fill: currentColor;
+}
+.pkm-type--colored .pkm-type-glyph {
+  fill: var(--pkm-type-color-text-light);
+}
+.pkm-type--theme-dark.pkm-type--colored .pkm-type-glyph {
+  fill: var(--pkm-type-color-text-dark);
+}
+.pkm-type--colored.pkm-type--not-filled.pkm-type--not-tera .pkm-type-glyph {
+  fill: currentColor;
+}
+.pkm-type--not-colored.pkm-type--filled.pkm-type--not-tera .pkm-type-glyph,
+.pkm-type--not-colored.pkm-type--tera .pkm-type-glyph {
+  fill: var(--pkm-type-color-text-light);
+}
+.pkm-type--not-colored.pkm-type--filled.pkm-type--not-tera.pkm-type--theme-dark .pkm-type-glyph,
+.pkm-type--not-colored.pkm-type--tera.pkm-type--theme-dark .pkm-type-glyph {
+  fill: var(--pkm-type-color-text-dark);
+}
+.pkm-type--rounded.pkm-type--not-tera .pkm-type-glyph {
+  transform: scale(0.9);
+}
+.pkm-type--tera .pkm-type-glyph {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  transform: scale(0.6);
+  z-index: 1;
+}
+.pkm-type--tera.pkm-type--size-xs .pkm-type-glyph,
+.pkm-type--tera.pkm-type--size-sm .pkm-type-glyph {
+  transform: scale(0.65);
+}
+.pkm-type--filled.pkm-type--size-xs.pkm-type--not-tera .pkm-type-glyph {
+  transform: scale(0.75);
+}
+.pkm-type--filled.pkm-type--size-sm.pkm-type--not-tera .pkm-type-glyph {
+  transform: scale(0.85);
+}
+.pkm-type--tera.pkm-type--size-xs .pkm-type-glyph {
+  top: 0;
+}
+.pkm-type--tera.pkm-type--size-sm .pkm-type-glyph {
+  top: 0;
+}
+.pkm-type--tera.pkm-type--size-md .pkm-type-glyph {
+  top: 1px;
+}
+.pkm-type--tera.pkm-type--size-lg .pkm-type-glyph {
+  top: 2px;
+}
+.pkm-type--tera.pkm-type--size-xl .pkm-type-glyph {
+  top: 2px;
+}
+/*# sourceMappingURL=index.css.map */

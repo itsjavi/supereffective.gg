@@ -1,4 +1,4 @@
-import { pokemonGamesMap } from '@supeffective/dataset'
+import { pokemonGamesMap } from '@/lib/data-client/metadata'
 
 import { cn } from '@/lib/utils'
 import type { PropsOf, Size } from '@/lib/utils/types'

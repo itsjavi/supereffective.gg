@@ -1,4 +1,4 @@
-import { TypeIcon } from '@supeffective/icons'
+import { TypeIcon } from '@/icons'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 

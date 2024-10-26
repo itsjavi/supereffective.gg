@@ -16,6 +16,6 @@ import '@/styles/legacy/styles.css'
 
 //
 //4; SuperEffective Icons
-import '@supeffective/icons/styles.css'
+import '@/icons/styles.css'
 
 export default AppLayout
