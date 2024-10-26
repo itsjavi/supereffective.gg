@@ -11,10 +11,6 @@ export type GameLabelProps = {
   rounded?: boolean
 } & PropsOf<'span'>
 
-function gameLabelRecipe({ gameId, size }: GameLabelProps) {
-  return ''
-}
-
 export function GameLabel(props: GameLabelProps) {
   const { gameId: recordId, size = 'sm', rounded, className, ...rest } = props
   const record = pokemonGamesMap.get(recordId)
