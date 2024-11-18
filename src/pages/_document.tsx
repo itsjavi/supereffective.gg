@@ -1,7 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import DocumentHeadContent from '@/lib/components/layout/DocumentHeadContent'
-import Script from 'next/script'
 
 class RootDocument extends Document {
   render() {
@@ -9,14 +8,14 @@ class RootDocument extends Document {
       <Html lang={'en'}>
         <Head>
           <DocumentHeadContent />
-        </Head>
-        <body>
-          <Script
+          <script
             defer
             data-domain="supereffective.gg"
             data-api="https://plaw.itsjavi.com/api/plaw"
             src="https://plaw.itsjavi.com/js/plaw.tagged-events.js"
           />
+        </Head>
+        <body>
           <Main />
           <NextScript />
           {/* <script
