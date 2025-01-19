@@ -11,8 +11,8 @@ class RootDocument extends Document {
           <script
             defer
             data-domain="supereffective.gg"
-            data-api="https://plaw.itsjavi.com/api/plaw"
-            src="https://plaw.itsjavi.com/js/plaw.tagged-events.js"
+            data-website-id="6eba0ad0-9d7b-47e7-89a3-dbdc08a8db69"
+            src="https://aw.itsjavi.com/s/uma.js"
           />
         </Head>
         <body>
