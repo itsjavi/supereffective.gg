@@ -2,7 +2,7 @@
   "name": "supereffective-website",
   "version": "3.10.0",
   "private": true,
-  "repository": "git@github.com:itsjavi/supereffectice.gg.git",
+  "repository": "git@github.com:itsjavi/supereffective.gg.git",
   "license": "MIT",
   "author": "Javi Aguilar https://itsjavi.com",
   "scripts": {
@@ -12,6 +12,8 @@
     "db-studio": "pnpm prisma studio",
     "dev": "rm -rf ./.next && PORT=3001 next dev",
     "format": "sort-package-json && prettier --ignore-path '.prettierignore' --write ./",
+    "json:minify": "bun run scripts/format-json-file.ts --minify",
+    "json:unminify": "bun run scripts/format-json-file.ts",
     "lint": "pnpm typecheck && prettier --ignore-path '.prettierignore' --check ./",
     "lint-fix": "pnpm format",
     "prepare": "pnpm prisma generate && sort-package-json",

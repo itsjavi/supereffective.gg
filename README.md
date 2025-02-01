@@ -1,11 +1,11 @@
 # SuperEffective
 
-[![Check Code Quality](https://github.com/itsjavi/supereffectice.gg/actions/workflows/quality.yml/badge.svg)](https://github.com/itsjavi/supereffectice.gg/actions/workflows/quality.yml)
+[![Check Code Quality](https://github.com/itsjavi/supereffective.gg/actions/workflows/quality.yml/badge.svg)](https://github.com/itsjavi/supereffective.gg/actions/workflows/quality.yml)
 [![wakatime](https://wakatime.com/badge/user/f2eacdee-569c-4e49-b11f-81a764fb575e/project/838d78e4-9190-4513-9c76-0e7672feab70.svg)](https://wakatime.com/badge/user/f2eacdee-569c-4e49-b11f-81a764fb575e/project/838d78e4-9190-4513-9c76-0e7672feab70)
 
 Source code for supereffective.gg 's website.
 
-Data can be found in https://github.com/itsjavi/supereffectice.gg/tree/main/src/lib/data-client
+Data can be found in https://github.com/itsjavi/supereffective.gg/tree/main/src/lib/data-client
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ This project is a NextJS application with the following directory structure:
     - `lib`: services and utilities specific to this domain
   - `hooks`: generic hooks
   - `lib`: generic libraries and services, or services that are not specific to a domain
-    - `pokedata`: helpers to fetch the static data from the dataset CDN, and types
+    - `data-client`: helpers to fetch the static data from the dataset CDN, and types
     - `mailer`: mail client abstraction supporting `local-fs` and `resend.com`
     - `mdx`: helpers to extract and load MDX content from a directory
     - `patreon`: Patreon API client abstraction
@@ -71,24 +71,34 @@ This project is a NextJS application with the following directory structure:
 
 Contributions are welcome! Please read the [contributing guidelines](./CONTRIBUTING.md) before submitting a PR.
 
-- [Dataset](https://github.com/itsjavi/supereffectice.gg/tree/main/src/lib/data-client)
-- [Issue Reports and Tracking](https://github.com/itsjavi/supereffectice.gg/issues)
-- [Project Roadmap and Task Board](https://github.com/orgs/supeffective/projects)
+- [Dataset](https://github.com/itsjavi/supereffective.gg/tree/main/src/lib/data-client)
+- [Issue Reports and Tracking](https://github.com/itsjavi/supereffective.gg/issues)
+- [Feedback and Project Roadmap](https://supeffective.canny.io)
 
-For other feedback that is not related to issues, please use our [Discord server](https://discord.gg/3fRXQFtrkN)
+For other questions and topics, please use our [Discord server](https://discord.gg/3fRXQFtrkN)
 
 ### Submitting changes to the dataset
 
 The data used in this project can be found as
-[minified JSON files](https://github.com/itsjavi/supereffectice.gg/tree/main/src/lib/data-client) in the
+[minified JSON files](https://github.com/itsjavi/supereffective.gg/tree/main/src/lib/data-client) in the
 `src/lib/data-client` folder of the project. Feel free to report data issues, suggest improvements and changes, or
 submit a pull request with the changes or fixes.
 
-In order to edit a minified JSON file, you will have to beautify it first. You can use the
-[JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/) website to do so.
+In order to edit a minified JSON file, you will have to beautify it first, edit your changes, and then minify it again.
 
-Before submitting a pull request, make sure that the `.min.json` files are minified again. You can use the same
-[JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/) website to do so.
+For that you can use these commands:
+
+- `pnpm run json:minify <filename>` to minify the JSON files
+- `pnpm run json:unminify <filename>` to convert the JSON files to a more readable format
+
+Example:
+
+```bash
+pnpm run json:unminify src/lib/data-client/pokemon/legacy-pokemon.min.json
+pnpm run json:minify src/lib/data-client/pokemon/legacy-pokemon.json
+```
+
+Before submitting a pull request, make sure that the `.min.json` files are updated and minified.
 
 ## License
 
