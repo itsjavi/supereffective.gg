@@ -39,3 +39,4 @@ turbo.json
 *.map
 
 src/icons/
+src/lib/data-client/**/*.json
