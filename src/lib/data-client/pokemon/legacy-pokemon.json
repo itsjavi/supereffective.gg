@@ -90073,7 +90073,7 @@
       "la",
       "sv"
     ],
-    "shinyReleased": false,
+    "shinyReleased": true,
     "shinyBase": null,
     "baseSpecies": null,
     "forms": [
@@ -90127,7 +90127,7 @@
       "la",
       "sv"
     ],
-    "shinyReleased": false,
+    "shinyReleased": true,
     "shinyBase": null,
     "baseSpecies": "enamorus",
     "forms": null,
