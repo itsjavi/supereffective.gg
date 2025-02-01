@@ -13,6 +13,7 @@
     "dev": "rm -rf ./.next && PORT=3001 next dev",
     "format": "sort-package-json && prettier --ignore-path '.prettierignore' --write ./",
     "json:minify": "bun run scripts/format-json-file.ts --minify",
+    "json:minify-pokemon": "bun run scripts/format-json-file.ts --minify src/lib/data-client/pokemon/legacy-pokemon.json",
     "json:unminify": "bun run scripts/format-json-file.ts",
     "lint": "pnpm typecheck && prettier --ignore-path '.prettierignore' --check ./",
     "lint-fix": "pnpm format",
