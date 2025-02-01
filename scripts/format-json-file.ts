@@ -12,8 +12,6 @@ const { values: cliOptions, positionals: cliArgs } = parseArgs({
 })
 
 ;(async () => {
-  console.log({ cliOptions, cliArgs })
-
   const [inputFile, outputFile] = cliArgs
 
   if (!fs.existsSync(inputFile)) {
