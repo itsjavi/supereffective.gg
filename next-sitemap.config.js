@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://supereffective.gg',
+  siteUrl: 'https://classic.pokepc.net',
   generateRobotsTxt: true, // (optional)
   sitemapSize: 10000,
   exclude: [

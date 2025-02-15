@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve supereffective.gg
+about: Create a report to help us improve SuperEffective
 title: ''
 labels: needs triage
 assignees: ''

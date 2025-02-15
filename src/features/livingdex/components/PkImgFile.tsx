@@ -5,7 +5,7 @@ import { classNames } from '@/lib/utils/deprecated'
 
 const variantFolder = {
   '2d': 'home2d-icon',
-  '3d': 'home3d-icon-bordered',
+  '3d': 'home3d-icon',
   pixelart: 'gen8-icon',
 }
 
@@ -35,7 +35,7 @@ export default function PkImgFile({ nid, shiny, variant, title, className, ...re
   )
 
   const assetVersion = baseConfig.assets.getPokeImgVersion(nid)
-  let imageSrc = `${baseConfig.assets.imagesUrl}/pokemon/${folder}/${nid}.png?v=${assetVersion}`
+  let imageSrc = `${baseConfig.assets.imagesUrl}/pokemon/${folder}/${nid}.webp?v=${assetVersion}`
 
   if (nid === 'placeholder') {
     imageSrc = '/images/placeholders/placeholder-200x200.png'

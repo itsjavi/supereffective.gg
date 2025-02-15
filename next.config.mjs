@@ -37,8 +37,10 @@ const baseConfig = {
         hostname: 'localhost',
       },
       {
-        hostname: 'cdn.supeffective.com',
+        hostname: 'classic.pokepc.net',
       },
+      { hostname: 'cdn.pokepc.net' },
+      { hostname: 'static-img.pokepc.net' },
     ],
     minimumCacheTTL: 60 * 60 * 24 * 7 * 4, // 4 weeks
   },

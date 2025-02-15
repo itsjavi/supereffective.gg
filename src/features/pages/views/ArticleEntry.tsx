@@ -216,17 +216,17 @@ export function ArticlePage(props: ArticlePageProps) {
     author: {
       '@type': 'Person',
       name: 'Javi Aguilar',
-      url: 'https://supereffective.gg/about',
+      url: 'https://classic.pokepc.net/about',
       contactPoint: {
         '@type': 'ContactPoint',
       },
     },
     publisher: {
       '@type': 'Organization',
-      name: 'supereffective.gg',
+      name: 'SuperEffective.gg',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://supereffective.gg/images/logo/logo.png',
+        url: 'https://classic.pokepc.net/images/logo/logo.png',
       },
       contactPoint: {
         '@type': 'ContactPoint',

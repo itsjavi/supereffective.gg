@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for supereffective.gg
+about: Suggest an idea for SuperEffective
 title: ''
 labels: needs triage
 assignees: ''

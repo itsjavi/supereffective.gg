@@ -3,9 +3,7 @@ import { getBaseUrl } from '@/lib/utils/urls'
 
 const ASSETS_CACHE_VERSION = '20230809-01'
 const ASSETS_CACHE_VERSION_INCREMENTAL = '20230924-01'
-// const dataCdn = isLocalAssetsEnabled() ? 'http://localhost:4455/data' : 'https://cdn.supeffective.com/dataset'
-// const assetsCdn = isLocalAssetsEnabled() ? 'http://localhost:4455/assets' : 'https://cdn.supeffective.com/assets'
-const assetsCdn = 'https://cdn.supeffective.com/assets'
+const assetsCdn = 'https://static-img.pokepc.net'
 
 const appConfig = {
   dev: isDevelopmentEnv(),
