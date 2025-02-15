@@ -64365,7 +64365,7 @@
       "swsh",
       "home"
     ],
-    "shinyReleased": false,
+    "shinyReleased": true,
     "shinyBase": null,
     "baseSpecies": null,
     "forms": [
@@ -64425,7 +64425,7 @@
       "swsh",
       "home"
     ],
-    "shinyReleased": false,
+    "shinyReleased": true,
     "shinyBase": null,
     "baseSpecies": "keldeo",
     "forms": null,
