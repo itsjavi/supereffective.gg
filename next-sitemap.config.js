@@ -6,6 +6,7 @@ module.exports = {
   exclude: [
     '/home',
     '/404',
+    '/error',
     '/login',
     '/profile',
     '/terms-and-conditions',

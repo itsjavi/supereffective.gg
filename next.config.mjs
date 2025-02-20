@@ -19,8 +19,18 @@ const baseConfig = {
     return [
       // Basic redirect
       {
+        source: '/index',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/news',
         destination: '/changelog?ref=news',
+        permanent: true,
+      },
+      {
+        source: '/livingdex',
+        destination: '/apps/livingdex/national',
         permanent: true,
       },
       // Wildcard path matching
